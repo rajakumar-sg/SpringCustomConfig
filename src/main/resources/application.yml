@@ -1,0 +1,13 @@
+
+spring:
+  application:
+    name: config
+  profiles:
+    active: vault-proxy
+  cloud:
+    config:
+      server:
+        vault-proxy:
+          search-locations:
+            - ./configs/app1
+            - ./configs/app2
